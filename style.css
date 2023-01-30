@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+}
+.container{
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container h2{
+    font-size: 5em;
+    line-height: 1em;
+    padding: 5px 20px;
+    margin: 15px;
+    text-align: center;
+    transition: .3s ease;
+}
+.container h4{
+    font-size: 1.3em;
+    color: #777;
+    margin-bottom: -10px;
+}
+.container h2.first{
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3), 
+                5px 5px 5px rgba(0, 0, 0, 0.2),
+                15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+.container h2.second{
+    color: #333;
+    filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
+            drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2))
+            drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
+}
+@media screen and (max-width: 668px){
+    .container h2{
+        font-size: 3.6em;
+    }
+}
